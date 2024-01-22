@@ -42,6 +42,7 @@ int adc_value = 0;
 
 void setup() {
   Serial.begin(9600);
+  rtc.begin();
   // Indicator LED
   pinMode(INDICATORLIGHTPIN, OUTPUT);
 

@@ -4,6 +4,7 @@
 RTC_DS3231 rtc;      
 
 void setup() {
+  rtc.begin();
   Serial.begin(9600);
   updateRTC();
 
